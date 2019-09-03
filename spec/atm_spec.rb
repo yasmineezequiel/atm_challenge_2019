@@ -8,6 +8,7 @@ describe Atm do
   allow(account).to receive(:balance).and_return(100)
   allow(account).to receive(:balance=)
   end
+  
 
   it 'allow withdraw if the account has enough balance.' do
     expected_output = { status: true, message: 'success', date: Date.today, amount:45 } 
@@ -22,4 +23,5 @@ describe Atm do
     subject.withdraw 50
     expect(subject.funds).to eq 950
   end
+  
 end
