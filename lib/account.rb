@@ -1,9 +1,10 @@
 class Account
-    attr_accessor :exp_date, :account_status
+    attr_accessor :exp_date, :account_status, :owner
     STANDARD_VALIDITY_YRS = 5
     
 
     def initialize
+    @owner = obj
     @exp_date = '09/24'
     @account_status = :active
     end
@@ -15,6 +16,16 @@ class Account
     def deactivate
         @account_status = :deactivated
     end
+
+    private
+    def set_owner(obj)
+        obj == nil ? missing_owner : @owner = obj
+    end
+    
+    def missing_owner
+        raise "An Account owner is required"
+    end
+
 
 
 end
