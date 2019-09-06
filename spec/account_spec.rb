@@ -15,8 +15,8 @@ describe Account do
     end
 
     it 'is expected to have an expiry date on initialize' do
-    expected_date = Date.today.next_year(5).strftime("%m/%Y")
-    expect(subject.exp_date).to eq expected_date
+        expected_date = Date.today.next_year(5).strftime("%m/%Y")
+        expect(subject.exp_date).to eq expected_date
     end
 
     it 'Is expected to have :active status on initialize' do
@@ -26,6 +26,12 @@ describe Account do
     it 'deactivates account using the instance method' do
         subject.deactivate 
         expect(subject.account_status).to eq :deactivated
+    end
+
+    it 'should initialize with a pin code of four numbers' do
+        my_number = 1234
+        number_length = Math.log10(my_number).to_i + 1
+        expect(number_length).to eq 4
     end
 
 end
