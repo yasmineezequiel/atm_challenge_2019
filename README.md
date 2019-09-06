@@ -1,4 +1,35 @@
 # atm_challenge_2019
+
+This is ATM program that is capable of withdrawing, accessing, and depositing funds. The program contains 3 seperate classes: 
+The 'ATM-class', the 'Account-class', and the 'Person-class'
+
+<h2> Dependencies</h2>
+
+This program has been written in Ruby(v2.6.3)
+Testing is being done in RSpec(v3.8)
+RSpec Gems are also being used.
+
+<h2>Installing</h2>
+
+1. To obtain the code:
+git clone ``` https://github.com/tazzex7/atm_challenge_2019.git ```
+
+2. Install Bundler:
+``` gem install bundler ```
+
+3. 
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 As a programmer
 In order to produce good quality code
@@ -67,4 +98,4 @@ I should NOT be able to to make a deposit.
 ```
 
 
-<h1> Hello </h1>
+
