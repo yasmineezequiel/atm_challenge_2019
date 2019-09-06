@@ -50,4 +50,19 @@ As an ATM operator
 In order to keep track of our costumers     
 We want to assign each account to a separate person
 ```
+```
+As a Person,
+to be able to use banking services to manage my funds,
+I would like to be able to create a bank account
+```
+```
+As a Person with a Bank Account,
+in order to be able to put my funds in the account ,
+i would like to be able to make a deposit
+```
+```
+As a Person without a Bank Account,
+In order to prevent me from using the wrong bank account,
+I should NOT be able to to make a deposit.
+```
 

@@ -1,12 +1,13 @@
 require './lib/account.rb'
-require './lib/atm.rb'
 
 class Person
 
-    attr_accessor :name
+    attr_accessor :name, :cash, :account
     
     def initialize(attrs = {})
         @name = set_name(attrs[:name])
+        @cash = 0
+        @account = nil
     end
 
     def set_name(name)
@@ -17,5 +18,20 @@ class Person
         raise RuntimeError, 'A name is required'
     end
 
+    def create_account
+        @account = Account.new(owner: self)
+    end
+    
+    def deposit(amount)
+        @account == nil ? missing_account : deposit_funds(amount)
+    end
+
+    private
+
+        def deposit_funds(amount)
+        @cash -= amount
+        @account.balance += amount
+        end
+    
 end
 
