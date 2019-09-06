@@ -40,7 +40,7 @@ gem 'rspec'
 
 <h2>Running tests</h2>
 To run tests, use RSpec command:
-```rspec```
+``` rspec ```
 
 To run specific tests run:
 ```rspec spec/file-name_spec.rb
@@ -123,3 +123,7 @@ Yasmine Ezequiel, Jonas Masharqa, Laetitia Vettese
 <h2>Acknowledgement</h2>
 
 Acknowledgement goes out to Craf Academy's code which this program was based on.
+
+<h2>License</h2>
+
+This project is under the MIT-License
