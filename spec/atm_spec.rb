@@ -52,4 +52,4 @@ describe Atm do
     expect(subject.withdraw(50, '1234', account)).to eq expected_output
   end
   
-end
+end 
