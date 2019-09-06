@@ -21,7 +21,7 @@ class Account
     def deactivate
         @account_status = :deactivated
     end
-
+    
     private
 
     def set_owner(person)
