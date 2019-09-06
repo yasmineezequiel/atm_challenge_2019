@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-=======
 # atm_challenge_2019
 ```
->>>>>>> 3a00e42dbcc3ebf1689b291b370cb01653786c6e
 As a programmer
 In order to produce good quality code
 I want to work in a test driven way and unit test my code
 
-<<<<<<< HEAD
-- Set up RSpec
-=======
 ```
 ```
 As a User       
@@ -51,4 +45,9 @@ As a Customer
 In order to manage my funds
 I need to have a personal account
 ```
->>>>>>> 3a00e42dbcc3ebf1689b291b370cb01653786c6e
+```
+As an ATM operator      
+In order to keep track of our costumers     
+We want to assign each account to a separate person
+```
+
