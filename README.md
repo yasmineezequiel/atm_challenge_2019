@@ -9,7 +9,7 @@ This program has been written in Ruby(v2.6.3)
 Testing is being done in RSpec(v3.8)
 RSpec Gems are also being used.
 
-<h2>Installing</h2>
+<h2>Installing and running</h2>
 
 1. To obtain the code:
 git clone ``` https://github.com/tazzex7/atm_challenge_2019.git ```
@@ -17,17 +17,35 @@ git clone ``` https://github.com/tazzex7/atm_challenge_2019.git ```
 2. Install Bundler:
 ``` gem install bundler ```
 
-3. 
+3. Create a Gemfile in appropriate folder:
+``` touch gemfile ```
 
+4. Edit Gemfile to add RSpec dependency in prefered code editor:
+``` source 'https://rubygems.org'
+gem 'rspec'
+```
 
+5. Use Bunder to install RSpec:
+``` bundle install ```
 
+6. Initialize RSpec after pulling code down from repo:
+``` rspec --init```
 
+7. Edit your RSpec file in prefered code editor:
+``` 
+--require spec_helper
+--format documentation
+--color
+```
 
+<h2>Running tests</h2>
+To run tests, use RSpec command:
+```rspec```
 
+To run specific tests run:
+```rspec spec/file-name_spec.rb
 
-
-
-
+<h2>User stories</h2>
 
 
 ```
@@ -98,4 +116,10 @@ I should NOT be able to to make a deposit.
 ```
 
 
+<h2>Authors</h2>
 
+Yasmine Ezequiel, Jonas Masharqa, Laetitia Vettese
+
+<h2>Acknowledgement</h2>
+
+Acknowledgement goes out to Craf Academy's code which this program was based on.
