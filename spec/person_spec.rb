@@ -50,7 +50,7 @@ describe Person do
 
         it 'can withdraw funds' do
             command = lambda { subject.withdraw(amount: 100, pin: subject.account.pin_code, account: subject.account, atm: atm) }
-            expect { command.call }.to raise_error 'An ATM is required'
+            expect(command.call).to be_truthy 
         end
 
         it 'withdraw is expected to raise an error if no ATM is passed in' do
