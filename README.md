@@ -116,14 +116,14 @@ I should NOT be able to to make a deposit.
 ```
 
 
-<h2>Authors</h2>
+Authors
 
 Yasmine Ezequiel, Jonas Masharqa, Laetitia Vettese
 
-<h2>Acknowledgement</h2>
+Acknowledgement
 
 Acknowledgement goes out to Craf Academy's code which this program was based on.
 
-<h2>License</h2>
+License;
 
 This project is under the MIT-License
